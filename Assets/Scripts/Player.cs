@@ -59,5 +59,17 @@ public class Player : MonoBehaviour
 
         if (direction != Vector3.zero)
             transform.forward = direction;
+
+
+
+        Rigidbody rigidbody = GetComponent<Rigidbody>();
+
+        if (rigidbody != null)
+        {
+            rigidbody.velocity = Vector3.zero;
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+        }
     }
+
+        
 }

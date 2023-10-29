@@ -6,8 +6,8 @@ public class SpeedPowerup : MonoBehaviour
 {
     public Player player;
 
-    public float duration = 5;
-    public float speed = 100;
+    public float duration = 2;
+    public float speed = 5;
 
     private float oldSpeed;
 
